@@ -1,7 +1,7 @@
 # jonsible.filter_plugins
 
 [![Build Status](https://travis-ci.com/jonsible/filter_plugins.svg?branch=master)](https://travis-ci.com/jonsible/filter_plugins)
-[![Galaxy](https://img.shields.io/badge/galaxy-jonsible.filter--plugins-blue.svg)](https://galaxy.ansible.com/jonsible/filter_plugins/)
+[![Galaxy](https://img.shields.io/badge/galaxy-jonsible.filter__plugins-blue.svg)](https://galaxy.ansible.com/jonsible/filter_plugins/)
 
 Role to include custom filter plugins
 
