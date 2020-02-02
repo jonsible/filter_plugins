@@ -1,0 +1,16 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - include_role:
+        name: filter-plugins
+
+    - name: Setting test list
+      set_fact:
+        test_dict:
+          item1:
+            attribute: 'ok'
+          item2:
+            attribute: 'ok'
+    - debug:
+        msg: "{{ test_dict | dict_strip_keys(['item1']) }}"
