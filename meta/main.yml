@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: filter-plugins
+  role_name: filter_plugins
   author: Jonathan Scherrer
   description: |
     Role to include custom filter plugins

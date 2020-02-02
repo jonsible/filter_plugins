@@ -1,7 +1,7 @@
-# jonsible.filter-plugins
+# jonsible.filter_plugins
 
-[![Build Status](https://travis-ci.com/jonsible/filter-plugins.svg?branch=master)](https://travis-ci.com/jonsible/filter-plugins)
-[![Galaxy](https://img.shields.io/badge/galaxy-jonsible.filter--plugins-blue.svg)](https://galaxy.ansible.com/jonsible/filter-plugins/)
+[![Build Status](https://travis-ci.com/jonsible/filter_plugins.svg?branch=master)](https://travis-ci.com/jonsible/filter_plugins)
+[![Galaxy](https://img.shields.io/badge/galaxy-jonsible.filter--plugins-blue.svg)](https://galaxy.ansible.com/jonsible/filter_plugins/)
 
 Role to include custom filter plugins
 
@@ -33,7 +33,7 @@ Install filters with the default settings
 ```yaml
 - hosts: all
   roles:
-     - role: jonsible.filter-plugins
+     - role: jonsible.filter_plugins
 ```
 
 ## License
