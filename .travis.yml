@@ -17,6 +17,9 @@ before_install:
 install:
   - sudo apt-get -y install python-pip libssl-dev
   - pip install --upgrade setuptools
+  - pip install ansible-lint
+  - pip install flake8
+  - pip install testinfra
   - pip install molecule
   - pip install molecule[docker]
   - WDIR=$(pwd)
