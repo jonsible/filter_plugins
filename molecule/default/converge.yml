@@ -5,6 +5,7 @@
     - include_role:
         name: filter_plugins
 
+    # Testing dict_strip_keys()
     - name: Setting test list
       set_fact:
         test_dict:
@@ -14,3 +15,17 @@
             attribute: 'ok'
     - debug:
         msg: "{{ test_dict | dict_strip_keys(['item1']) }}"
+
+    # Testing dict_merge()
+    - name: Setting test dicts
+      set_fact:
+        ldict:
+          key1: value1
+          key2: value2
+          key3: value3
+        rdict:
+          key1: value4
+          key2:
+            subkey5: value5
+    - debug:
+        msg: "{{ ldict | dict_merge(rdict) }}"
