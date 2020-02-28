@@ -38,6 +38,8 @@ def dict_merge(_ldict, _rdict):
     into left dict, i.e. values in ldict that
     are also in rdict will be overriden
     """
+    if not isinstance(_ldict, dict):
+        return _rdict
     return { **_ldict, **_rdict }
 
 class FilterModule(object):
