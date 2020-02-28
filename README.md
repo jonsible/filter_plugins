@@ -13,7 +13,19 @@ None.
 
 ### Default usage
 
-As default filters is installed and running.
+Add this role into your meta/main.yml to use it with your role :  
+```
+  dependencies:
+    - jonsible.filter_plugins
+```
+
+
+You can then use these filters :  
+```python
+def dict_filter_keys(_dict, _regex): # Selects keys in _dict matching regexes in _regex (list)
+def dict_strip_keys(_dict, _regex):  # Strips keys in _dict matching regexes _regex (list)
+def dict_merge(_ldict, _rdict):      # Merges right dict into left dict
+```
 If you want to adapt this to your needs look at the [Advanced usage](#advanced-usage) section.
 
 ### Advanced usage
