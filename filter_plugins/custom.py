@@ -33,6 +33,7 @@ def dict_filter_keys(_dict, _regex):
 def dict_strip_keys(_dict, _regex):
     return dict_process(_dict, _regex, True)
 
+
 def dict_merge(_ldict, _rdict):
     """This function will merge right dict
     into left dict, i.e. values in ldict that
@@ -40,7 +41,8 @@ def dict_merge(_ldict, _rdict):
     """
     if not isinstance(_ldict, dict):
         return _rdict
-    return { **_ldict, **_rdict }
+    return {**_ldict, **_rdict}
+
 
 class FilterModule(object):
     def filters(self):
